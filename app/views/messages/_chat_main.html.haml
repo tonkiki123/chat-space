@@ -1,0 +1,27 @@
+.Chat-main
+  .Chat-main__group-info
+    .info__name
+      .info__name__group test
+      .info__name__member Member:name
+    .info__btn 
+      = link_to "#", class: "edit__btn" do
+        Edit
+  .Chat-main__message-list
+    .main__messages
+      .name__day
+        .user__name kaataa
+        .day__time 2020/06/26 11:38:59
+      .message おはよう！
+      .name__day
+        .user__name kaataa
+        .day__time 2020/06/26 11:40:59
+      .message 本日は曇り
+  .Chat-main__message-form
+    %form.form__contents
+      .form__inputBox
+        %input.text-form{"placeholder": "type a message"}
+          .parent
+            %label{class: "text-form__image"}
+              = icon("fas","image")
+              %input{type: "file",file_field:"image", class: "hidden"}
+        %input.form__submit{"name": "commit", "type": "submit", "value": "Send"}
