@@ -32,7 +32,7 @@
       }
     }
   }
-  &__message-list {
+  &__Message-list {
     width: calc(100vw - 300px);
     height: calc(100vh - 190px);
     background-color: #fafafa;
@@ -63,12 +63,11 @@
     background-color: #d2d2d2;
     display: flex;
     padding: 20px 50px 20px 40px;
-    .form__contents{
+    .form-contents{
       display: flex;
-    }
-      .form__inputBox{
+    
+      .Form__inputBox{
         display: flex;
-        position: relative;
         
         .text-form{
           padding: 0 50px 0 15px;
@@ -77,19 +76,19 @@
           border: none;
         }
         .parent {
-          position: absolute;
-          right: 125px;
-          top: 15px;
-          .text-form__image{
-            
-            .hidden{
-              display: none;
-            }
+          position: relative;
+          .text-icon{
+            position: absolute;
+            right: 20px;
+            top: 15px;
           }
+          .Hidden{
+            display: none;
+            }
         }         
       }
     }
-    .form__submit{
+    .Form__submit{
       padding: 0 30px;
       margin-left: 15px;
       color: #fff;
@@ -97,6 +96,7 @@
       background-color: #38aef0;
       border: none;
     }
+}
 }
 
 
