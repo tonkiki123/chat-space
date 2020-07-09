@@ -1,6 +1,6 @@
 # config valid only for current version of Capistrano
 # capistranoのバージョンを記載。固定のバージョンを利用し続け、バージョン変更によるトラブルを防止する
-lock "~> 3.14.1"
+lock '~> 3.14.1'
 
 # Capistranoのログの表示に利用する
 set :application, 'chat-space'
@@ -12,7 +12,7 @@ set :repo_url,  'git@github.com:tonkiki123/chat-space.git'
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 
 set :rbenv_type, :user
-set :rbenv_ruby, '<このアプリで使用しているrubyのバージョン>' #カリキュラム通りに進めた場合、2.6.5です
+set :rbenv_ruby, '2.6.5' #カリキュラム通りに進めた場合、2.6.5です
 
 # どの公開鍵を利用してデプロイするか
 set :ssh_options, auth_methods: ['publickey'],
