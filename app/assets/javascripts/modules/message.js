@@ -59,10 +59,15 @@ $(function(){
       $('.Chat-main__Message-list').animate({ scrollTop: $('.Chat-main__Message-list')[0].scrollHeight});
       $('.Form__submit').prop("disabled", false);
     })
+
     .fail(function() {
       alert("メッセージ送信に失敗しました");
       $('.Form__submit').prop("disabled", false);
-    });
+    })
+
+    // .always(function() {
+    //   $(".Form__submit").removeAttr("disabled");
+    // });
   });
 
   // 以下の記述を削除
